@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #d4efff;
+}
+
+.calculator {
+  width: 400px;
+  border-radius: 40px;
+  border: 15px solid rgba(93, 226, 255, 0.47);
+}
+
+.calculator-display {
+  background: rgb(255, 255, 255);
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.calculator-display h1 {
+  background: rgb(255, 255, 255);
+  margin: 0;
+  padding: 25px;
+  font-size: 45px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 100;
+  overflow-x: auto;
+  border-radius: 40px;
+}
+
+.calculator-button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.equal-sign {
+  grid-column: -2;
+  grid-row: 2/span 4;
+}
+
+button {
+  color: white;
+  position: relative;
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  cursor: pointer;
+  background: rgba(93, 226, 255, 0.47);
+}
+
+button:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+button:focus {
+  outline: none;
+}
+
+.upper {
+  position: absolute;
+  font-size: 10px;
+  left: 60%;
+  top: 30%;
+}
+
+.clear:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 95%;
+  }
+}/*# sourceMappingURL=style.css.map */
